@@ -85,10 +85,10 @@ The script runs transfer request multiple times on the same asset id=123 to show
   "Status": "transferred",
   "TransactionHistory": {
     "createAsset": "Wed, 14 Mar 2018 19:04:51 UTC",
-    "transferAssetWed, 14 Mar 2018 19:06:15 UTC": "Asset transferred from: John Doe to new owner: Rajesh Shimpi on:Wed, 14 Mar 2018 19:06:15 UTC",
-    "transferAssetWed, 14 Mar 2018 19:07:48 UTC": "Asset transferred from: Rajesh Shimpi to new owner: Raj Shimpi on:Wed, 14 Mar 2018 19:07:48 UTC",
-    "transferAssetWed, 14 Mar 2018 19:07:53 UTC": "Asset transferred from: Raj Shimpi to new owner: Tiger Shimpi on:Wed, 14 Mar 2018 19:07:53 UTC",
-    "transferAssetWed, 14 Mar 2018 19:07:58 UTC": "Asset transferred from: Tiger Shimpi to new owner: Rishi Shimpi on:Wed, 14 Mar 2018 19:07:58 UTC"
+    "transferAssetWed, 14 Mar 2018 19:06:15 UTC": "Asset transferred from: John Doe to new owner: x  on:Wed, 14 Mar 2018 19:06:15 UTC",
+    "transferAssetWed, 14 Mar 2018 19:07:48 UTC": "Asset transferred from: bb to new owner: y on:Wed, 14 Mar 2018 19:07:48 UTC",
+    "transferAssetWed, 14 Mar 2018 19:07:53 UTC": "Asset transferred from: cc to new owner: z on:Wed, 14 Mar 2018 19:07:53 UTC",
+    "transferAssetWed, 14 Mar 2018 19:07:58 UTC": "Asset transferred from: dd to new owner: yy on:Wed, 14 Mar 2018 19:07:58 UTC"
   }
 }```
 
