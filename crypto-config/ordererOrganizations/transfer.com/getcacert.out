@@ -1,0 +1,3 @@
+2018/03/14 17:33:35 [INFO] User provided config file: crypto-config/ordererOrganizations/transfer.com/fabric-ca-client-config.yaml
+2018/03/14 17:33:35 [INFO] Configuration file location: /home/raj/mygo/src/hlfCertification/transfer/crypto-config/ordererOrganizations/transfer.com/fabric-ca-client-config.yaml
+2018/03/14 17:33:35 [INFO] Stored CA root certificate at /home/raj/mygo/src/hlfCertification/transfer/crypto-config/ordererOrganizations/transfer.com/msp/cacerts/localhost-9100.pem

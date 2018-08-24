@@ -1,0 +1,3 @@
+2018/03/14 17:34:04 [INFO] User provided config file: crypto-config/peerOrganizations/Org2.com/fabric-ca-client-config.yaml
+2018/03/14 17:34:04 [INFO] Configuration file location: /home/raj/mygo/src/hlfCertification/transfer/crypto-config/peerOrganizations/Org2.com/fabric-ca-client-config.yaml
+2018/03/14 17:34:04 [INFO] Stored CA root certificate at /home/raj/mygo/src/hlfCertification/transfer/crypto-config/peerOrganizations/Org2.com/msp/cacerts/localhost-9104.pem

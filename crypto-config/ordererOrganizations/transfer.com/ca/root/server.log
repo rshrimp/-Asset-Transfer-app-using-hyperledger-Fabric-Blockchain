@@ -1,0 +1,314 @@
+2018/03/14 17:33:27 [INFO] Created default configuration file at /home/raj/mygo/src/hlfCertification/transfer/crypto-config/ordererOrganizations/transfer.com/ca/root/fabric-ca-server-config.yaml
+2018/03/14 17:33:27 [INFO] Starting server in home directory: /home/raj/mygo/src/hlfCertification/transfer/crypto-config/ordererOrganizations/transfer.com/ca/root
+2018/03/14 17:33:27 [DEBUG] CA Home Directory: /home/raj/mygo/src/hlfCertification/transfer/crypto-config/ordererOrganizations/transfer.com/ca/root
+2018/03/14 17:33:27 [DEBUG] Making server filenames absolute
+2018/03/14 17:33:27 [DEBUG] Initializing default CA in directory /home/raj/mygo/src/hlfCertification/transfer/crypto-config/ordererOrganizations/transfer.com/ca/root
+2018/03/14 17:33:27 [DEBUG] Init CA with home /home/raj/mygo/src/hlfCertification/transfer/crypto-config/ordererOrganizations/transfer.com/ca/root and config {CA:{Name: Keyfile:ca-key.pem Certfile:ca-cert.pem Chainfile:ca-chain.pem} Signing:0xc4202b2700 CSR:{CN:fabric-ca-server Names:[{C:US ST:North Carolina L: O:Hyperledger OU:Fabric SerialNumber:}] Hosts:[raj-hp localhost] KeyRequest:<nil> CA:0xc4202b8440 SerialNumber:} Registry:{MaxEnrollments:-1 Identities:[{ Name:**** Pass:**** Type:client Affiliation: MaxEnrollments:0 Attrs:map[hf.Revoker:1 hf.IntermediateCA:1 hf.Registrar.Roles:client,user,peer,validator,auditor hf.Registrar.DelegateRoles:client,user,validator,auditor]  }]} Affiliations:map[org1:[department1 department2] org2:[department1]] LDAP:{ Enabled:false URL:ldap://****:****@<host>:<port>/<base> UserFilter:(uid=%s) GroupFilter:(memberUid=%s) TLS:{false [ldap-server-cert.pem] {ldap-client-key.pem ldap-client-cert.pem}}  } DB:{ Type:sqlite3 Datasource:fabric-ca-server.db TLS:{false [db-server-cert.pem] {db-client-key.pem db-client-cert.pem}}  } CSP:0xc4202a5000 Client:<nil> Intermediate:{ParentServer:{URL: CAName:} TLS:{Enabled:false CertFiles:[] Client:{KeyFile: CertFile:}} Enrollment:{Name: Secret: Profile: Label: CSR:<nil> CAName:}}}
+2018/03/14 17:33:27 [DEBUG] CA Home Directory: /home/raj/mygo/src/hlfCertification/transfer/crypto-config/ordererOrganizations/transfer.com/ca/root
+2018/03/14 17:33:27 [DEBUG] Initializing BCCSP: &{ProviderName:SW SwOpts:0xc4202a8e40 Pkcs11Opts:<nil>}
+2018/03/14 17:33:27 [DEBUG] Initializing BCCSP with software options &{SecLevel:256 HashFamily:SHA2 Ephemeral:false FileKeystore:0xc4202b23b0 DummyKeystore:<nil>}
+2018/03/14 17:33:27 [DEBUG] Initialize key material
+2018/03/14 17:33:27 [DEBUG] Making CA filenames absolute
+2018/03/14 17:33:27 [DEBUG] Getting CA cert; parent server URL is ''
+2018/03/14 17:33:27 [DEBUG] Root CA certificate request: {CN:fabric-ca-server Names:[{C:US ST:North Carolina L: O:Hyperledger OU:Fabric SerialNumber:}] Hosts:[raj-hp localhost] KeyRequest:0xc4202b9220 CA:0xc4202b8440 SerialNumber:}
+2018/03/14 17:33:27 [INFO] generating key: &{A:ecdsa S:256}
+2018/03/14 17:33:27 [DEBUG] generate key from request: algo=ecdsa, size=256
+2018/03/14 17:33:27 [INFO] encoded CSR
+2018/03/14 17:33:27 [DEBUG] validating configuration
+2018/03/14 17:33:27 [DEBUG] validate local profile
+2018/03/14 17:33:27 [DEBUG] profile is valid
+2018/03/14 17:33:27 [INFO] signed certificate with serial number 459151709830425319347101413682120002686584534872
+2018/03/14 17:33:27 [INFO] The CA key and certificate were generated for CA 
+2018/03/14 17:33:27 [INFO] The key was stored by BCCSP provider 'SW'
+2018/03/14 17:33:27 [INFO] The certificate is at: /home/raj/mygo/src/hlfCertification/transfer/crypto-config/ordererOrganizations/transfer.com/ca/root/ca-cert.pem
+2018/03/14 17:33:27 [DEBUG] Initializing DB
+2018/03/14 17:33:27 [DEBUG] Using sqlite database, connect to database in home (/home/raj/mygo/src/hlfCertification/transfer/crypto-config/ordererOrganizations/transfer.com/ca/root/fabric-ca-server.db) directory
+2018/03/14 17:33:27 [DEBUG] Creating SQLite database (/home/raj/mygo/src/hlfCertification/transfer/crypto-config/ordererOrganizations/transfer.com/ca/root/fabric-ca-server.db) if it does not exist...
+2018/03/14 17:33:27 [DEBUG] Creating users table if it does not exist
+2018/03/14 17:33:27 [DEBUG] Creating affiliations table if it does not exist
+2018/03/14 17:33:27 [DEBUG] Creating certificates table if it does not exist
+2018/03/14 17:33:27 [DEBUG] Successfully opened sqlite3 DB
+2018/03/14 17:33:27 [DEBUG] Initializing identity registry
+2018/03/14 17:33:27 [DEBUG] Loading identity table
+2018/03/14 17:33:27 [DEBUG] Loading identity 'admin'
+2018/03/14 17:33:27 [DEBUG] DB: Getting identity admin
+2018/03/14 17:33:27 [DEBUG] Max enrollment value verification - User specified max enrollment: 0, CA max enrollment: -1
+2018/03/14 17:33:27 [DEBUG] DB: Add identity admin
+2018/03/14 17:33:27 [DEBUG] Successfully added identity admin to the database
+2018/03/14 17:33:27 [DEBUG] Registered identity: { Name:**** Pass:**** Type:client Affiliation: MaxEnrollments:-1 Attrs:map[hf.Revoker:1 hf.IntermediateCA:1 hf.Registrar.Roles:client,user,peer,validator,auditor hf.Registrar.DelegateRoles:client,user,validator,auditor]  }
+2018/03/14 17:33:27 [DEBUG] Successfully loaded identity table
+2018/03/14 17:33:27 [DEBUG] Initialized DB identity registry
+2018/03/14 17:33:27 [DEBUG] Loading affiliations table
+2018/03/14 17:33:27 [DEBUG] DB: Add affiliation org1
+2018/03/14 17:33:27 [DEBUG] Affiliation 'org1' added
+2018/03/14 17:33:27 [DEBUG] DB: Add affiliation org1.department1
+2018/03/14 17:33:27 [DEBUG] Affiliation 'org1.department1' added
+2018/03/14 17:33:27 [DEBUG] DB: Add affiliation org1.department2
+2018/03/14 17:33:27 [DEBUG] Affiliation 'org1.department2' added
+2018/03/14 17:33:27 [DEBUG] DB: Add affiliation org2
+2018/03/14 17:33:27 [DEBUG] Affiliation 'org2' added
+2018/03/14 17:33:27 [DEBUG] DB: Add affiliation org2.department1
+2018/03/14 17:33:28 [DEBUG] Affiliation 'org2.department1' added
+2018/03/14 17:33:28 [DEBUG] Successfully loaded affiliations table
+2018/03/14 17:33:28 [INFO] Initialized sqlite3 database at /home/raj/mygo/src/hlfCertification/transfer/crypto-config/ordererOrganizations/transfer.com/ca/root/fabric-ca-server.db
+2018/03/14 17:33:28 [DEBUG] Initializing enrollment signer
+2018/03/14 17:33:28 [DEBUG] validating configuration
+2018/03/14 17:33:28 [DEBUG] validate local profile
+2018/03/14 17:33:28 [DEBUG] profile is valid
+2018/03/14 17:33:28 [DEBUG] validate local profile
+2018/03/14 17:33:28 [DEBUG] profile is valid
+2018/03/14 17:33:28 [DEBUG] CA initialization successful
+2018/03/14 17:33:28 [INFO] Home directory for default CA: /home/raj/mygo/src/hlfCertification/transfer/crypto-config/ordererOrganizations/transfer.com/ca/root
+2018/03/14 17:33:28 [DEBUG] 1 CA instance(s) running on server
+2018/03/14 17:33:28 [INFO] Listening on http://0.0.0.0:9100
+2018/03/14 17:33:32 [DEBUG] Received request
+POST /enroll
+Authorization: Basic YWRtaW46YWRtaW5wdw==
+{"hosts":["root","root"],"certificate_request":"-----BEGIN CERTIFICATE REQUEST-----\nMIIBPzCB5wIBADBdMQswCQYDVQQGEwJVUzEXMBUGA1UECBMOTm9ydGggQ2Fyb2xp\nbmExFDASBgNVBAoTC0h5cGVybGVkZ2VyMQ8wDQYDVQQLEwZGYWJyaWMxDjAMBgNV\nBAMTBWFkbWluMFkwEwYHKoZIzj0CAQYIKoZIzj0DAQcDQgAECi0+2MvosFL+ijZR\nDTXozFJcDNIPTXMCTl5dhO+aGdsuechvxRDonuILnFKj9Xe0OPwcbias9CFTd7P5\novxgTqAoMCYGCSqGSIb3DQEJDjEZMBcwFQYDVR0RBA4wDIIEcm9vdIIEcm9vdDAK\nBggqhkjOPQQDAgNHADBEAiAwAr400njDOfs8e09ReHsvBiwEgdfNgpjqKHGnFw/c\nHQIgBnILvan0ObNaeE+Hg2IGbKsej4RPz+QPJQftg8+CelA=\n-----END CERTIFICATE REQUEST-----\n","profile":"tls","crl_override":"","label":"","CAName":""}
+2018/03/14 17:33:32 [DEBUG] Directing traffic to default CA
+2018/03/14 17:33:32 [DEBUG] DB: Getting identity admin
+2018/03/14 17:33:32 [DEBUG] DB: Login user admin with max enrollments of -1 and state of 0
+2018/03/14 17:33:32 [DEBUG] Successfully incremented state for identity admin to 1
+2018/03/14 17:33:32 [DEBUG] DB: identity admin successfully logged in
+2018/03/14 17:33:32 [DEBUG] Identity/Pass was correct
+2018/03/14 17:33:32 [DEBUG] Received request for endpoint enroll
+2018/03/14 17:33:32 [DEBUG] Enrollment request: {SignRequest:{Hosts:[root root] Request:-----BEGIN CERTIFICATE REQUEST-----
+MIIBPzCB5wIBADBdMQswCQYDVQQGEwJVUzEXMBUGA1UECBMOTm9ydGggQ2Fyb2xp
+bmExFDASBgNVBAoTC0h5cGVybGVkZ2VyMQ8wDQYDVQQLEwZGYWJyaWMxDjAMBgNV
+BAMTBWFkbWluMFkwEwYHKoZIzj0CAQYIKoZIzj0DAQcDQgAECi0+2MvosFL+ijZR
+DTXozFJcDNIPTXMCTl5dhO+aGdsuechvxRDonuILnFKj9Xe0OPwcbias9CFTd7P5
+ovxgTqAoMCYGCSqGSIb3DQEJDjEZMBcwFQYDVR0RBA4wDIIEcm9vdIIEcm9vdDAK
+BggqhkjOPQQDAgNHADBEAiAwAr400njDOfs8e09ReHsvBiwEgdfNgpjqKHGnFw/c
+HQIgBnILvan0ObNaeE+Hg2IGbKsej4RPz+QPJQftg8+CelA=
+-----END CERTIFICATE REQUEST-----
+ Subject:<nil> Profile:tls CRLOverride: Label: Serial:<nil> Extensions:[]} CAName:}
+2018/03/14 17:33:32 [DEBUG] csrAuthCheck: enrollment ID=admin, CommonName=admin, Subject=<nil>
+2018/03/14 17:33:32 [DEBUG] CSR authorization check passed
+2018/03/14 17:33:32 [DEBUG] Checking CSR fields to make sure that they do not exceed maximum character limits
+2018/03/14 17:33:32 [INFO] signed certificate with serial number 32656792568904709153947118238528695776961402129
+2018/03/14 17:33:32 [DEBUG] DB: Insert Certificate
+2018/03/14 17:33:32 [DEBUG] Saved serial number as hex 5b86197f3a99d46813f3f97db6c2640c3c09511
+2018/03/14 17:33:32 [DEBUG] saved certificate with serial number 32656792568904709153947118238528695776961402129
+2018/03/14 17:33:32 [INFO] 127.0.0.1:36862 - "POST /enroll" 200
+2018/03/14 17:33:32 [DEBUG] Received request
+POST /enroll
+Authorization: Basic YWRtaW46YWRtaW5wdw==
+{"hosts":["raj-hp"],"certificate_request":"-----BEGIN CERTIFICATE REQUEST-----\nMIIBPDCB4wIBADBdMQswCQYDVQQGEwJVUzEXMBUGA1UECBMOTm9ydGggQ2Fyb2xp\nbmExFDASBgNVBAoTC0h5cGVybGVkZ2VyMQ8wDQYDVQQLEwZGYWJyaWMxDjAMBgNV\nBAMTBWFkbWluMFkwEwYHKoZIzj0CAQYIKoZIzj0DAQcDQgAEsdKgFtGy2q/7nuWf\nJUz5au3nJVi458PPndQA3Q0yruyQDetwrvUARJ+lEgbyArPSDYZ6zMZNwzsJqyBU\nqn+Kj6AkMCIGCSqGSIb3DQEJDjEVMBMwEQYDVR0RBAowCIIGcmFqLWhwMAoGCCqG\nSM49BAMCA0gAMEUCIQCrvvlkg92iOFdIU+s8hwExehGfRaQ5ha66Ri9AuRCCRAIg\nHlJRJPDU9t30JopIMwPuvdJvFLr0MR2rcfJrHXR0CQw=\n-----END CERTIFICATE REQUEST-----\n","profile":"","crl_override":"","label":"","CAName":""}
+2018/03/14 17:33:32 [DEBUG] Directing traffic to default CA
+2018/03/14 17:33:32 [DEBUG] DB: Getting identity admin
+2018/03/14 17:33:32 [DEBUG] DB: Login user admin with max enrollments of -1 and state of 1
+2018/03/14 17:33:32 [DEBUG] Successfully incremented state for identity admin to 2
+2018/03/14 17:33:32 [DEBUG] DB: identity admin successfully logged in
+2018/03/14 17:33:32 [DEBUG] Identity/Pass was correct
+2018/03/14 17:33:32 [DEBUG] Received request for endpoint enroll
+2018/03/14 17:33:32 [DEBUG] Enrollment request: {SignRequest:{Hosts:[raj-hp] Request:-----BEGIN CERTIFICATE REQUEST-----
+MIIBPDCB4wIBADBdMQswCQYDVQQGEwJVUzEXMBUGA1UECBMOTm9ydGggQ2Fyb2xp
+bmExFDASBgNVBAoTC0h5cGVybGVkZ2VyMQ8wDQYDVQQLEwZGYWJyaWMxDjAMBgNV
+BAMTBWFkbWluMFkwEwYHKoZIzj0CAQYIKoZIzj0DAQcDQgAEsdKgFtGy2q/7nuWf
+JUz5au3nJVi458PPndQA3Q0yruyQDetwrvUARJ+lEgbyArPSDYZ6zMZNwzsJqyBU
+qn+Kj6AkMCIGCSqGSIb3DQEJDjEVMBMwEQYDVR0RBAowCIIGcmFqLWhwMAoGCCqG
+SM49BAMCA0gAMEUCIQCrvvlkg92iOFdIU+s8hwExehGfRaQ5ha66Ri9AuRCCRAIg
+HlJRJPDU9t30JopIMwPuvdJvFLr0MR2rcfJrHXR0CQw=
+-----END CERTIFICATE REQUEST-----
+ Subject:<nil> Profile: CRLOverride: Label: Serial:<nil> Extensions:[]} CAName:}
+2018/03/14 17:33:32 [DEBUG] csrAuthCheck: enrollment ID=admin, CommonName=admin, Subject=<nil>
+2018/03/14 17:33:32 [DEBUG] CSR authorization check passed
+2018/03/14 17:33:32 [DEBUG] Checking CSR fields to make sure that they do not exceed maximum character limits
+2018/03/14 17:33:32 [INFO] signed certificate with serial number 247855025178720431024461488459883301062295738997
+2018/03/14 17:33:32 [DEBUG] DB: Insert Certificate
+2018/03/14 17:33:32 [DEBUG] Saved serial number as hex 2b6a3426cd1eff88e18c0efebad781b2ce28da75
+2018/03/14 17:33:32 [DEBUG] saved certificate with serial number 247855025178720431024461488459883301062295738997
+2018/03/14 17:33:32 [INFO] 127.0.0.1:36864 - "POST /enroll" 200
+2018/03/14 17:33:32 [DEBUG] Received request
+POST /register
+Authorization: LS0tLS1CRUdJTiBDRVJUSUZJQ0FURS0tLS0tCk1JSUNPakNDQWVDZ0F3SUJBZ0lVSzJvMEpzMGUvNGpoakE3K3V0ZUJzczRvMm5Vd0NnWUlLb1pJemowRUF3SXcKYURFTE1Ba0dBMVVFQmhNQ1ZWTXhGekFWQmdOVkJBZ1REazV2Y25Sb0lFTmhjbTlzYVc1aE1SUXdFZ1lEVlFRSwpFd3RJZVhCbGNteGxaR2RsY2pFUE1BMEdBMVVFQ3hNR1JtRmljbWxqTVJrd0Z3WURWUVFERXhCbVlXSnlhV010ClkyRXRjMlZ5ZG1WeU1CNFhEVEU0TURNeE5ESXlNamt3TUZvWERURTVNRE14TkRJeU1qa3dNRm93WFRFTE1Ba0cKQTFVRUJoTUNWVk14RnpBVkJnTlZCQWdURGs1dmNuUm9JRU5oY205c2FXNWhNUlF3RWdZRFZRUUtFd3RJZVhCbApjbXhsWkdkbGNqRVBNQTBHQTFVRUN4TUdSbUZpY21sak1RNHdEQVlEVlFRREV3VmhaRzFwYmpCWk1CTUdCeXFHClNNNDlBZ0VHQ0NxR1NNNDlBd0VIQTBJQUJMSFNvQmJSc3Rxdis1N2xueVZNK1dydDV5Vll1T2ZEejUzVUFOME4KTXE3c2tBM3JjSzcxQUVTZnBSSUc4Z0t6MGcyR2VzekdUY003Q2FzZ1ZLcC9pbytqY3pCeE1BNEdBMVVkRHdFQgovd1FFQXdJSGdEQU1CZ05WSFJNQkFmOEVBakFBTUIwR0ExVWREZ1FXQkJSQzJBK1hZYkE2V1Y1R3RzSHZCbHdoCmFIMlByekFmQmdOVkhTTUVHREFXZ0JUdDFGQUJWSnN6ckN0Y3pkMEU4aWIrZjBaMmZUQVJCZ05WSFJFRUNqQUkKZ2daeVlXb3RhSEF3Q2dZSUtvWkl6ajBFQXdJRFNBQXdSUUloQUpibmM4VWUyaFdxUE53YTVsL3ppQVJ5aWpVTAp5K01ESDRxS3U4UEYyZXluQWlBSm5vZDV2cXEvUVlCWWJLczJmTGl1Y1NEZUE4U29SMklWYUpYK1M0TkwzZz09Ci0tLS0tRU5EIENFUlRJRklDQVRFLS0tLS0K.MEUCIQD7NBWwAbVBIfZY2WUxHKsN4k56pfPNRFsGJIG2uznrzwIgZI27t/ydmpaAoQlN1QfYH230Vc3vUg5JL9EXTrbF5Yk=
+{"id":"nodeAdmin","type":"user","secret":"secret","max_enrollments":-1,"affiliation":"org1","attrs":[{"name":"","value":""}]}
+2018/03/14 17:33:32 [DEBUG] Directing traffic to default CA
+2018/03/14 17:33:32 [DEBUG] Checking for revocation/expiration of certificate owned by 'admin'
+2018/03/14 17:33:32 [DEBUG] DB: Get certificate by serial (2b6a3426cd1eff88e18c0efebad781b2ce28da75) and aki (edd45001549b33ac2b5ccddd04f226fe7f46767d)
+2018/03/14 17:33:32 [DEBUG] Successful authentication of 'admin'
+2018/03/14 17:33:32 [DEBUG] Register request received
+2018/03/14 17:33:32 [DEBUG] Received registration request from admin: &{RegistrationRequest:{Name:nodeAdmin Type:user Secret:<<user-specified>> MaxEnrollments:-1 Affiliation:org1 Attributes:[{Name: Value:}] CAName:}}
+2018/03/14 17:33:32 [DEBUG] canRegister - Check to see if user admin can register
+2018/03/14 17:33:32 [DEBUG] DB: Getting identity admin
+2018/03/14 17:33:32 [DEBUG] Validate ID
+2018/03/14 17:33:32 [DEBUG] An affiliation is required for identity type user
+2018/03/14 17:33:32 [DEBUG] Validating affiliation: org1
+2018/03/14 17:33:32 [DEBUG] DB: Get affiliation org1
+2018/03/14 17:33:32 [DEBUG] Registering user id: nodeAdmin
+2018/03/14 17:33:32 [DEBUG] Max enrollment value verification - User specified max enrollment: -1, CA max enrollment: -1
+2018/03/14 17:33:32 [DEBUG] DB: Getting identity nodeAdmin
+2018/03/14 17:33:32 [DEBUG] DB: Add identity nodeAdmin
+2018/03/14 17:33:33 [DEBUG] Successfully added identity nodeAdmin to the database
+2018/03/14 17:33:33 [DEBUG] Registration completed - sending response 0xc420164068
+2018/03/14 17:33:33 [INFO] 127.0.0.1:36866 - "POST /register" 200
+2018/03/14 17:33:33 [DEBUG] Received request
+POST /enroll
+Authorization: Basic bm9kZUFkbWluOnNlY3JldA==
+{"hosts":["raj-hp"],"certificate_request":"-----BEGIN CERTIFICATE REQUEST-----\nMIIBQDCB5wIBADBhMQswCQYDVQQGEwJVUzEXMBUGA1UECBMOTm9ydGggQ2Fyb2xp\nbmExFDASBgNVBAoTC0h5cGVybGVkZ2VyMQ8wDQYDVQQLEwZGYWJyaWMxEjAQBgNV\nBAMTCW5vZGVBZG1pbjBZMBMGByqGSM49AgEGCCqGSM49AwEHA0IABCJKCrxIPFzt\n2rrzCDNZ45Wr5IOasp7Djqasc7uWbSZwsvuW10VYxp6+kS0Rdza3WB4VW44erkQ6\nC05fzfnJO9KgJDAiBgkqhkiG9w0BCQ4xFTATMBEGA1UdEQQKMAiCBnJhai1ocDAK\nBggqhkjOPQQDAgNIADBFAiEAwBDIQ0dyQUdIoAltOSSJoUGQPPCg4z5FAPWiHskP\nyrECIH5GtIy55EFRrYyCDfc4+ql004OIIsRrdXsiL0BTKZ00\n-----END CERTIFICATE REQUEST-----\n","profile":"","crl_override":"","label":"","CAName":""}
+2018/03/14 17:33:33 [DEBUG] Directing traffic to default CA
+2018/03/14 17:33:33 [DEBUG] DB: Getting identity nodeAdmin
+2018/03/14 17:33:33 [DEBUG] DB: Login user nodeAdmin with max enrollments of -1 and state of 0
+2018/03/14 17:33:33 [DEBUG] Successfully incremented state for identity nodeAdmin to 1
+2018/03/14 17:33:33 [DEBUG] DB: identity nodeAdmin successfully logged in
+2018/03/14 17:33:33 [DEBUG] Identity/Pass was correct
+2018/03/14 17:33:33 [DEBUG] Received request for endpoint enroll
+2018/03/14 17:33:33 [DEBUG] Enrollment request: {SignRequest:{Hosts:[raj-hp] Request:-----BEGIN CERTIFICATE REQUEST-----
+MIIBQDCB5wIBADBhMQswCQYDVQQGEwJVUzEXMBUGA1UECBMOTm9ydGggQ2Fyb2xp
+bmExFDASBgNVBAoTC0h5cGVybGVkZ2VyMQ8wDQYDVQQLEwZGYWJyaWMxEjAQBgNV
+BAMTCW5vZGVBZG1pbjBZMBMGByqGSM49AgEGCCqGSM49AwEHA0IABCJKCrxIPFzt
+2rrzCDNZ45Wr5IOasp7Djqasc7uWbSZwsvuW10VYxp6+kS0Rdza3WB4VW44erkQ6
+C05fzfnJO9KgJDAiBgkqhkiG9w0BCQ4xFTATMBEGA1UdEQQKMAiCBnJhai1ocDAK
+BggqhkjOPQQDAgNIADBFAiEAwBDIQ0dyQUdIoAltOSSJoUGQPPCg4z5FAPWiHskP
+yrECIH5GtIy55EFRrYyCDfc4+ql004OIIsRrdXsiL0BTKZ00
+-----END CERTIFICATE REQUEST-----
+ Subject:<nil> Profile: CRLOverride: Label: Serial:<nil> Extensions:[]} CAName:}
+2018/03/14 17:33:33 [DEBUG] csrAuthCheck: enrollment ID=nodeAdmin, CommonName=nodeAdmin, Subject=<nil>
+2018/03/14 17:33:33 [DEBUG] CSR authorization check passed
+2018/03/14 17:33:33 [DEBUG] Checking CSR fields to make sure that they do not exceed maximum character limits
+2018/03/14 17:33:33 [INFO] signed certificate with serial number 390997461411138852847397670996078518747443929793
+2018/03/14 17:33:33 [DEBUG] DB: Insert Certificate
+2018/03/14 17:33:33 [DEBUG] Saved serial number as hex 447ceebbafc6813654f1cfe1775b636dae6aa2c1
+2018/03/14 17:33:33 [DEBUG] saved certificate with serial number 390997461411138852847397670996078518747443929793
+2018/03/14 17:33:33 [INFO] 127.0.0.1:36868 - "POST /enroll" 200
+2018/03/14 17:33:33 [DEBUG] Received request
+POST /register
+Authorization: LS0tLS1CRUdJTiBDRVJUSUZJQ0FURS0tLS0tCk1JSUNPakNDQWVDZ0F3SUJBZ0lVSzJvMEpzMGUvNGpoakE3K3V0ZUJzczRvMm5Vd0NnWUlLb1pJemowRUF3SXcKYURFTE1Ba0dBMVVFQmhNQ1ZWTXhGekFWQmdOVkJBZ1REazV2Y25Sb0lFTmhjbTlzYVc1aE1SUXdFZ1lEVlFRSwpFd3RJZVhCbGNteGxaR2RsY2pFUE1BMEdBMVVFQ3hNR1JtRmljbWxqTVJrd0Z3WURWUVFERXhCbVlXSnlhV010ClkyRXRjMlZ5ZG1WeU1CNFhEVEU0TURNeE5ESXlNamt3TUZvWERURTVNRE14TkRJeU1qa3dNRm93WFRFTE1Ba0cKQTFVRUJoTUNWVk14RnpBVkJnTlZCQWdURGs1dmNuUm9JRU5oY205c2FXNWhNUlF3RWdZRFZRUUtFd3RJZVhCbApjbXhsWkdkbGNqRVBNQTBHQTFVRUN4TUdSbUZpY21sak1RNHdEQVlEVlFRREV3VmhaRzFwYmpCWk1CTUdCeXFHClNNNDlBZ0VHQ0NxR1NNNDlBd0VIQTBJQUJMSFNvQmJSc3Rxdis1N2xueVZNK1dydDV5Vll1T2ZEejUzVUFOME4KTXE3c2tBM3JjSzcxQUVTZnBSSUc4Z0t6MGcyR2VzekdUY003Q2FzZ1ZLcC9pbytqY3pCeE1BNEdBMVVkRHdFQgovd1FFQXdJSGdEQU1CZ05WSFJNQkFmOEVBakFBTUIwR0ExVWREZ1FXQkJSQzJBK1hZYkE2V1Y1R3RzSHZCbHdoCmFIMlByekFmQmdOVkhTTUVHREFXZ0JUdDFGQUJWSnN6ckN0Y3pkMEU4aWIrZjBaMmZUQVJCZ05WSFJFRUNqQUkKZ2daeVlXb3RhSEF3Q2dZSUtvWkl6ajBFQXdJRFNBQXdSUUloQUpibmM4VWUyaFdxUE53YTVsL3ppQVJ5aWpVTAp5K01ESDRxS3U4UEYyZXluQWlBSm5vZDV2cXEvUVlCWWJLczJmTGl1Y1NEZUE4U29SMklWYUpYK1M0TkwzZz09Ci0tLS0tRU5EIENFUlRJRklDQVRFLS0tLS0K.MEUCIQCJkWXB1aOQkdFWwyIg3aypy9leIjw2SeRGYBR2eRd0jAIgGuoFB3I/kKsuQU4WXylChyQJ0gL8mmIBhq4js745qu4=
+{"id":"User1@transfer.com","type":"user","secret":"secret","max_enrollments":-1,"affiliation":"org1","attrs":[{"name":"","value":""}]}
+2018/03/14 17:33:33 [DEBUG] Directing traffic to default CA
+2018/03/14 17:33:33 [DEBUG] Checking for revocation/expiration of certificate owned by 'admin'
+2018/03/14 17:33:33 [DEBUG] DB: Get certificate by serial (2b6a3426cd1eff88e18c0efebad781b2ce28da75) and aki (edd45001549b33ac2b5ccddd04f226fe7f46767d)
+2018/03/14 17:33:33 [DEBUG] Successful authentication of 'admin'
+2018/03/14 17:33:33 [DEBUG] Register request received
+2018/03/14 17:33:33 [DEBUG] Received registration request from admin: &{RegistrationRequest:{Name:User1@transfer.com Type:user Secret:<<user-specified>> MaxEnrollments:-1 Affiliation:org1 Attributes:[{Name: Value:}] CAName:}}
+2018/03/14 17:33:33 [DEBUG] canRegister - Check to see if user admin can register
+2018/03/14 17:33:33 [DEBUG] DB: Getting identity admin
+2018/03/14 17:33:33 [DEBUG] Validate ID
+2018/03/14 17:33:33 [DEBUG] An affiliation is required for identity type user
+2018/03/14 17:33:33 [DEBUG] Validating affiliation: org1
+2018/03/14 17:33:33 [DEBUG] DB: Get affiliation org1
+2018/03/14 17:33:33 [DEBUG] Registering user id: User1@transfer.com
+2018/03/14 17:33:33 [DEBUG] Max enrollment value verification - User specified max enrollment: -1, CA max enrollment: -1
+2018/03/14 17:33:33 [DEBUG] DB: Getting identity User1@transfer.com
+2018/03/14 17:33:33 [DEBUG] DB: Add identity User1@transfer.com
+2018/03/14 17:33:33 [DEBUG] Successfully added identity User1@transfer.com to the database
+2018/03/14 17:33:33 [DEBUG] Registration completed - sending response 0xc420164160
+2018/03/14 17:33:33 [INFO] 127.0.0.1:36870 - "POST /register" 200
+2018/03/14 17:33:33 [DEBUG] Received request
+POST /enroll
+Authorization: Basic VXNlcjFAdHJhbnNmZXIuY29tOnNlY3JldA==
+{"hosts":["raj-hp"],"certificate_request":"-----BEGIN CERTIFICATE REQUEST-----\nMIIBSTCB8AIBADBqMQswCQYDVQQGEwJVUzEXMBUGA1UECBMOTm9ydGggQ2Fyb2xp\nbmExFDASBgNVBAoTC0h5cGVybGVkZ2VyMQ8wDQYDVQQLEwZGYWJyaWMxGzAZBgNV\nBAMMElVzZXIxQHRyYW5zZmVyLmNvbTBZMBMGByqGSM49AgEGCCqGSM49AwEHA0IA\nBEKJ4sJWKq1Hc9UxedQ27DKL4g/jpE/K4JPrgxhX0dDb2iEilUsJmhGUs1xiBHuz\ngk0JP0dnMD0qw8PXUWdLA+ygJDAiBgkqhkiG9w0BCQ4xFTATMBEGA1UdEQQKMAiC\nBnJhai1ocDAKBggqhkjOPQQDAgNIADBFAiEAy3/7nilpEVrR/ta6P/a5uHHRc232\nN4OpGalE9J8GVFcCIDgn0ZO1rTMfzHZzoDh4zddLB3QVPcGQ+6U6Gn+vhd99\n-----END CERTIFICATE REQUEST-----\n","profile":"","crl_override":"","label":"","CAName":""}
+2018/03/14 17:33:33 [DEBUG] Directing traffic to default CA
+2018/03/14 17:33:33 [DEBUG] DB: Getting identity User1@transfer.com
+2018/03/14 17:33:33 [DEBUG] DB: Login user User1@transfer.com with max enrollments of -1 and state of 0
+2018/03/14 17:33:33 [DEBUG] Successfully incremented state for identity User1@transfer.com to 1
+2018/03/14 17:33:33 [DEBUG] DB: identity User1@transfer.com successfully logged in
+2018/03/14 17:33:33 [DEBUG] Identity/Pass was correct
+2018/03/14 17:33:33 [DEBUG] Received request for endpoint enroll
+2018/03/14 17:33:33 [DEBUG] Enrollment request: {SignRequest:{Hosts:[raj-hp] Request:-----BEGIN CERTIFICATE REQUEST-----
+MIIBSTCB8AIBADBqMQswCQYDVQQGEwJVUzEXMBUGA1UECBMOTm9ydGggQ2Fyb2xp
+bmExFDASBgNVBAoTC0h5cGVybGVkZ2VyMQ8wDQYDVQQLEwZGYWJyaWMxGzAZBgNV
+BAMMElVzZXIxQHRyYW5zZmVyLmNvbTBZMBMGByqGSM49AgEGCCqGSM49AwEHA0IA
+BEKJ4sJWKq1Hc9UxedQ27DKL4g/jpE/K4JPrgxhX0dDb2iEilUsJmhGUs1xiBHuz
+gk0JP0dnMD0qw8PXUWdLA+ygJDAiBgkqhkiG9w0BCQ4xFTATMBEGA1UdEQQKMAiC
+BnJhai1ocDAKBggqhkjOPQQDAgNIADBFAiEAy3/7nilpEVrR/ta6P/a5uHHRc232
+N4OpGalE9J8GVFcCIDgn0ZO1rTMfzHZzoDh4zddLB3QVPcGQ+6U6Gn+vhd99
+-----END CERTIFICATE REQUEST-----
+ Subject:<nil> Profile: CRLOverride: Label: Serial:<nil> Extensions:[]} CAName:}
+2018/03/14 17:33:33 [DEBUG] csrAuthCheck: enrollment ID=User1@transfer.com, CommonName=User1@transfer.com, Subject=<nil>
+2018/03/14 17:33:33 [DEBUG] CSR authorization check passed
+2018/03/14 17:33:33 [DEBUG] Checking CSR fields to make sure that they do not exceed maximum character limits
+2018/03/14 17:33:33 [INFO] signed certificate with serial number 129992071590775008956046670994578255697710643949
+2018/03/14 17:33:33 [DEBUG] DB: Insert Certificate
+2018/03/14 17:33:33 [DEBUG] Saved serial number as hex 16c50bcc84404a1a5df42ba9b9540708326b7aed
+2018/03/14 17:33:34 [DEBUG] saved certificate with serial number 129992071590775008956046670994578255697710643949
+2018/03/14 17:33:34 [INFO] 127.0.0.1:36872 - "POST /enroll" 200
+2018/03/14 17:33:34 [DEBUG] Received request
+POST /enroll
+Authorization: Basic YWRtaW46YWRtaW5wdw==
+{"hosts":["orderer.transfer.com","orderer"],"certificate_request":"-----BEGIN CERTIFICATE REQUEST-----\nMIIBUjCB+gIBADBdMQswCQYDVQQGEwJVUzEXMBUGA1UECBMOTm9ydGggQ2Fyb2xp\nbmExFDASBgNVBAoTC0h5cGVybGVkZ2VyMQ8wDQYDVQQLEwZGYWJyaWMxDjAMBgNV\nBAMTBWFkbWluMFkwEwYHKoZIzj0CAQYIKoZIzj0DAQcDQgAEDACsgAcAzuQuqbVm\ng75lwoJCYNAp2BVF84wSgDLO2Bw2DZeHa5C2S6EpbWH/avcXbFS4BpI24t3lCoLU\nYTmp6aA7MDkGCSqGSIb3DQEJDjEsMCowKAYDVR0RBCEwH4IUb3JkZXJlci50cmFu\nc2Zlci5jb22CB29yZGVyZXIwCgYIKoZIzj0EAwIDRwAwRAIgNZzEQ6UWIn/d3w9y\n9OVxf2JWeQJHM+8cvCvzqvGFZ2ACIATH0sHaMBpgIsTpvkIbBqH8lfK0UHDJ4Dgv\n8ht6hyQo\n-----END CERTIFICATE REQUEST-----\n","profile":"tls","crl_override":"","label":"","CAName":""}
+2018/03/14 17:33:34 [DEBUG] Directing traffic to default CA
+2018/03/14 17:33:34 [DEBUG] DB: Getting identity admin
+2018/03/14 17:33:34 [DEBUG] DB: Login user admin with max enrollments of -1 and state of 2
+2018/03/14 17:33:34 [DEBUG] Successfully incremented state for identity admin to 3
+2018/03/14 17:33:34 [DEBUG] DB: identity admin successfully logged in
+2018/03/14 17:33:34 [DEBUG] Identity/Pass was correct
+2018/03/14 17:33:34 [DEBUG] Received request for endpoint enroll
+2018/03/14 17:33:34 [DEBUG] Enrollment request: {SignRequest:{Hosts:[orderer.transfer.com orderer] Request:-----BEGIN CERTIFICATE REQUEST-----
+MIIBUjCB+gIBADBdMQswCQYDVQQGEwJVUzEXMBUGA1UECBMOTm9ydGggQ2Fyb2xp
+bmExFDASBgNVBAoTC0h5cGVybGVkZ2VyMQ8wDQYDVQQLEwZGYWJyaWMxDjAMBgNV
+BAMTBWFkbWluMFkwEwYHKoZIzj0CAQYIKoZIzj0DAQcDQgAEDACsgAcAzuQuqbVm
+g75lwoJCYNAp2BVF84wSgDLO2Bw2DZeHa5C2S6EpbWH/avcXbFS4BpI24t3lCoLU
+YTmp6aA7MDkGCSqGSIb3DQEJDjEsMCowKAYDVR0RBCEwH4IUb3JkZXJlci50cmFu
+c2Zlci5jb22CB29yZGVyZXIwCgYIKoZIzj0EAwIDRwAwRAIgNZzEQ6UWIn/d3w9y
+9OVxf2JWeQJHM+8cvCvzqvGFZ2ACIATH0sHaMBpgIsTpvkIbBqH8lfK0UHDJ4Dgv
+8ht6hyQo
+-----END CERTIFICATE REQUEST-----
+ Subject:<nil> Profile:tls CRLOverride: Label: Serial:<nil> Extensions:[]} CAName:}
+2018/03/14 17:33:34 [DEBUG] csrAuthCheck: enrollment ID=admin, CommonName=admin, Subject=<nil>
+2018/03/14 17:33:34 [DEBUG] CSR authorization check passed
+2018/03/14 17:33:34 [DEBUG] Checking CSR fields to make sure that they do not exceed maximum character limits
+2018/03/14 17:33:34 [INFO] signed certificate with serial number 465935710625725034501254396696298869539605393896
+2018/03/14 17:33:34 [DEBUG] DB: Insert Certificate
+2018/03/14 17:33:34 [DEBUG] Saved serial number as hex 519d47a5379efbb9be7af4885dc9a33d03bd31e8
+2018/03/14 17:33:34 [DEBUG] saved certificate with serial number 465935710625725034501254396696298869539605393896
+2018/03/14 17:33:34 [INFO] 127.0.0.1:36874 - "POST /enroll" 200
+2018/03/14 17:33:34 [DEBUG] Received request
+POST /register
+Authorization: LS0tLS1CRUdJTiBDRVJUSUZJQ0FURS0tLS0tCk1JSUNPakNDQWVDZ0F3SUJBZ0lVSzJvMEpzMGUvNGpoakE3K3V0ZUJzczRvMm5Vd0NnWUlLb1pJemowRUF3SXcKYURFTE1Ba0dBMVVFQmhNQ1ZWTXhGekFWQmdOVkJBZ1REazV2Y25Sb0lFTmhjbTlzYVc1aE1SUXdFZ1lEVlFRSwpFd3RJZVhCbGNteGxaR2RsY2pFUE1BMEdBMVVFQ3hNR1JtRmljbWxqTVJrd0Z3WURWUVFERXhCbVlXSnlhV010ClkyRXRjMlZ5ZG1WeU1CNFhEVEU0TURNeE5ESXlNamt3TUZvWERURTVNRE14TkRJeU1qa3dNRm93WFRFTE1Ba0cKQTFVRUJoTUNWVk14RnpBVkJnTlZCQWdURGs1dmNuUm9JRU5oY205c2FXNWhNUlF3RWdZRFZRUUtFd3RJZVhCbApjbXhsWkdkbGNqRVBNQTBHQTFVRUN4TUdSbUZpY21sak1RNHdEQVlEVlFRREV3VmhaRzFwYmpCWk1CTUdCeXFHClNNNDlBZ0VHQ0NxR1NNNDlBd0VIQTBJQUJMSFNvQmJSc3Rxdis1N2xueVZNK1dydDV5Vll1T2ZEejUzVUFOME4KTXE3c2tBM3JjSzcxQUVTZnBSSUc4Z0t6MGcyR2VzekdUY003Q2FzZ1ZLcC9pbytqY3pCeE1BNEdBMVVkRHdFQgovd1FFQXdJSGdEQU1CZ05WSFJNQkFmOEVBakFBTUIwR0ExVWREZ1FXQkJSQzJBK1hZYkE2V1Y1R3RzSHZCbHdoCmFIMlByekFmQmdOVkhTTUVHREFXZ0JUdDFGQUJWSnN6ckN0Y3pkMEU4aWIrZjBaMmZUQVJCZ05WSFJFRUNqQUkKZ2daeVlXb3RhSEF3Q2dZSUtvWkl6ajBFQXdJRFNBQXdSUUloQUpibmM4VWUyaFdxUE53YTVsL3ppQVJ5aWpVTAp5K01ESDRxS3U4UEYyZXluQWlBSm5vZDV2cXEvUVlCWWJLczJmTGl1Y1NEZUE4U29SMklWYUpYK1M0TkwzZz09Ci0tLS0tRU5EIENFUlRJRklDQVRFLS0tLS0K.MEUCIQDpTBvSF1616WtrLs+lX69iJFtQB6tCW9bRg8pW0sPvWQIgWscA86BaCAhnuCL9GFIIssbCnNKIGPPXoZJ+wvikF90=
+{"id":"orderer.transfer.com","type":"user","secret":"secret","max_enrollments":-1,"affiliation":"org1","attrs":[{"name":"","value":""}]}
+2018/03/14 17:33:34 [DEBUG] Directing traffic to default CA
+2018/03/14 17:33:34 [DEBUG] Checking for revocation/expiration of certificate owned by 'admin'
+2018/03/14 17:33:34 [DEBUG] DB: Get certificate by serial (2b6a3426cd1eff88e18c0efebad781b2ce28da75) and aki (edd45001549b33ac2b5ccddd04f226fe7f46767d)
+2018/03/14 17:33:34 [DEBUG] Successful authentication of 'admin'
+2018/03/14 17:33:34 [DEBUG] Register request received
+2018/03/14 17:33:34 [DEBUG] Received registration request from admin: &{RegistrationRequest:{Name:orderer.transfer.com Type:user Secret:<<user-specified>> MaxEnrollments:-1 Affiliation:org1 Attributes:[{Name: Value:}] CAName:}}
+2018/03/14 17:33:34 [DEBUG] canRegister - Check to see if user admin can register
+2018/03/14 17:33:34 [DEBUG] DB: Getting identity admin
+2018/03/14 17:33:34 [DEBUG] Validate ID
+2018/03/14 17:33:34 [DEBUG] An affiliation is required for identity type user
+2018/03/14 17:33:34 [DEBUG] Validating affiliation: org1
+2018/03/14 17:33:34 [DEBUG] DB: Get affiliation org1
+2018/03/14 17:33:34 [DEBUG] Registering user id: orderer.transfer.com
+2018/03/14 17:33:34 [DEBUG] Max enrollment value verification - User specified max enrollment: -1, CA max enrollment: -1
+2018/03/14 17:33:34 [DEBUG] DB: Getting identity orderer.transfer.com
+2018/03/14 17:33:34 [DEBUG] DB: Add identity orderer.transfer.com
+2018/03/14 17:33:34 [DEBUG] Successfully added identity orderer.transfer.com to the database
+2018/03/14 17:33:34 [DEBUG] Registration completed - sending response 0xc420164318
+2018/03/14 17:33:34 [INFO] 127.0.0.1:36876 - "POST /register" 200
+2018/03/14 17:33:34 [DEBUG] Received request
+POST /enroll
+Authorization: Basic b3JkZXJlci50cmFuc2Zlci5jb206c2VjcmV0
+{"hosts":["raj-hp"],"certificate_request":"-----BEGIN CERTIFICATE REQUEST-----\nMIIBSzCB8gIBADBsMQswCQYDVQQGEwJVUzEXMBUGA1UECBMOTm9ydGggQ2Fyb2xp\nbmExFDASBgNVBAoTC0h5cGVybGVkZ2VyMQ8wDQYDVQQLEwZGYWJyaWMxHTAbBgNV\nBAMTFG9yZGVyZXIudHJhbnNmZXIuY29tMFkwEwYHKoZIzj0CAQYIKoZIzj0DAQcD\nQgAE1h7cMt7D5E9ahTDSa9PO7FBD7Faoc8k7SwE9E13K0RcCy5e8pbCAI8sP1zzi\nT23OqGQ9iB0h15Wtz9LXDe6XkKAkMCIGCSqGSIb3DQEJDjEVMBMwEQYDVR0RBAow\nCIIGcmFqLWhwMAoGCCqGSM49BAMCA0gAMEUCIQDsWylq4nQAra9+/sn528qaenDX\ncP1fMeR9ZHqGZWwfyQIgKk5PWFJPcxRJX47mRr0//klPbXo56nKaJ9l/Vb943BE=\n-----END CERTIFICATE REQUEST-----\n","profile":"","crl_override":"","label":"","CAName":""}
+2018/03/14 17:33:34 [DEBUG] Directing traffic to default CA
+2018/03/14 17:33:34 [DEBUG] DB: Getting identity orderer.transfer.com
+2018/03/14 17:33:34 [DEBUG] DB: Login user orderer.transfer.com with max enrollments of -1 and state of 0
+2018/03/14 17:33:34 [DEBUG] Successfully incremented state for identity orderer.transfer.com to 1
+2018/03/14 17:33:34 [DEBUG] DB: identity orderer.transfer.com successfully logged in
+2018/03/14 17:33:34 [DEBUG] Identity/Pass was correct
+2018/03/14 17:33:34 [DEBUG] Received request for endpoint enroll
+2018/03/14 17:33:34 [DEBUG] Enrollment request: {SignRequest:{Hosts:[raj-hp] Request:-----BEGIN CERTIFICATE REQUEST-----
+MIIBSzCB8gIBADBsMQswCQYDVQQGEwJVUzEXMBUGA1UECBMOTm9ydGggQ2Fyb2xp
+bmExFDASBgNVBAoTC0h5cGVybGVkZ2VyMQ8wDQYDVQQLEwZGYWJyaWMxHTAbBgNV
+BAMTFG9yZGVyZXIudHJhbnNmZXIuY29tMFkwEwYHKoZIzj0CAQYIKoZIzj0DAQcD
+QgAE1h7cMt7D5E9ahTDSa9PO7FBD7Faoc8k7SwE9E13K0RcCy5e8pbCAI8sP1zzi
+T23OqGQ9iB0h15Wtz9LXDe6XkKAkMCIGCSqGSIb3DQEJDjEVMBMwEQYDVR0RBAow
+CIIGcmFqLWhwMAoGCCqGSM49BAMCA0gAMEUCIQDsWylq4nQAra9+/sn528qaenDX
+cP1fMeR9ZHqGZWwfyQIgKk5PWFJPcxRJX47mRr0//klPbXo56nKaJ9l/Vb943BE=
+-----END CERTIFICATE REQUEST-----
+ Subject:<nil> Profile: CRLOverride: Label: Serial:<nil> Extensions:[]} CAName:}
+2018/03/14 17:33:34 [DEBUG] csrAuthCheck: enrollment ID=orderer.transfer.com, CommonName=orderer.transfer.com, Subject=<nil>
+2018/03/14 17:33:34 [DEBUG] CSR authorization check passed
+2018/03/14 17:33:34 [DEBUG] Checking CSR fields to make sure that they do not exceed maximum character limits
+2018/03/14 17:33:34 [INFO] signed certificate with serial number 19850769824271101881116125688020921022194230613
+2018/03/14 17:33:34 [DEBUG] DB: Insert Certificate
+2018/03/14 17:33:34 [DEBUG] Saved serial number as hex 37a23a9784239edf7a4285d8e9854473d19a555
+2018/03/14 17:33:35 [DEBUG] saved certificate with serial number 19850769824271101881116125688020921022194230613
+2018/03/14 17:33:35 [INFO] 127.0.0.1:36878 - "POST /enroll" 200
+2018/03/14 17:33:35 [DEBUG] Received request
+POST /cainfo
+Authorization: Basic YWRtaW46YWRtaW5wdw==
+{}
+2018/03/14 17:33:35 [DEBUG] Directing traffic to default CA
+2018/03/14 17:33:35 [DEBUG] Received request for server info
+2018/03/14 17:33:35 [INFO] 127.0.0.1:36880 - "POST /cainfo" 200
